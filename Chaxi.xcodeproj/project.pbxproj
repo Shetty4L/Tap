@@ -14,8 +14,9 @@
 		B56802C42025128D005AAFA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56802C22025128D005AAFA7 /* LaunchScreen.storyboard */; };
 		B56802CF2025128D005AAFA7 /* ChaxiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56802CE2025128D005AAFA7 /* ChaxiTests.swift */; };
 		B56802DA2025138A005AAFA7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B56802D92025138A005AAFA7 /* Podfile */; };
-		B5E3D6CC20253DAE0036AEC7 /* LocationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D6CB20253DAE0036AEC7 /* LocationTextField.swift */; };
 		B5E3D6D220254C880036AEC7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B5E3D6D120254C880036AEC7 /* .gitignore */; };
+		B5E3D6D62026BEC80036AEC7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D6D52026BEC80036AEC7 /* Utils.swift */; };
+		B5E3D6D82026C0950036AEC7 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D6D72026C0950036AEC7 /* KeyboardLayoutConstraint.swift */; };
 		C5569406054DB2BAAA3561CB /* libPods-Chaxi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10DEBB5A2E920903559AF5B8 /* libPods-Chaxi.a */; };
 /* End PBXBuildFile section */
 
@@ -43,8 +44,9 @@
 		B56802CE2025128D005AAFA7 /* ChaxiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaxiTests.swift; sourceTree = "<group>"; };
 		B56802D02025128D005AAFA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B56802D92025138A005AAFA7 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B5E3D6CB20253DAE0036AEC7 /* LocationTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTextField.swift; sourceTree = "<group>"; };
 		B5E3D6D120254C880036AEC7 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
+		B5E3D6D52026BEC80036AEC7 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		B5E3D6D72026C0950036AEC7 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
 		F5D8EE817D02B8FC8D597DD9 /* Pods-Chaxi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chaxi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chaxi/Pods-Chaxi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +109,7 @@
 		B56802B82025128C005AAFA7 /* Chaxi */ = {
 			isa = PBXGroup;
 			children = (
+				B5E3D6D72026C0950036AEC7 /* KeyboardLayoutConstraint.swift */,
 				B5E3D6CA20253D860036AEC7 /* UI Classes */,
 				B5E3D6C920253D7A0036AEC7 /* View Controllers */,
 				B56802B92025128D005AAFA7 /* AppDelegate.swift */,
@@ -116,6 +119,7 @@
 				B56802C52025128D005AAFA7 /* Info.plist */,
 				B56802D92025138A005AAFA7 /* Podfile */,
 				B5E3D6D120254C880036AEC7 /* .gitignore */,
+				B5E3D6D52026BEC80036AEC7 /* Utils.swift */,
 			);
 			path = Chaxi;
 			sourceTree = "<group>";
@@ -140,7 +144,6 @@
 		B5E3D6CA20253D860036AEC7 /* UI Classes */ = {
 			isa = PBXGroup;
 			children = (
-				B5E3D6CB20253DAE0036AEC7 /* LocationTextField.swift */,
 			);
 			path = "UI Classes";
 			sourceTree = "<group>";
@@ -311,7 +314,8 @@
 			files = (
 				B56802BC2025128D005AAFA7 /* ViewController.swift in Sources */,
 				B56802BA2025128D005AAFA7 /* AppDelegate.swift in Sources */,
-				B5E3D6CC20253DAE0036AEC7 /* LocationTextField.swift in Sources */,
+				B5E3D6D82026C0950036AEC7 /* KeyboardLayoutConstraint.swift in Sources */,
+				B5E3D6D62026BEC80036AEC7 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

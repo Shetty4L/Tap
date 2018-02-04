@@ -10,7 +10,7 @@ import UIKit
 import GoogleMaps
 import GooglePlaces
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     var locationManager = CLLocationManager()
     var currentLocation: CLLocation?
@@ -18,7 +18,6 @@ class ViewController: UIViewController {
     var placesClient: GMSPlacesClient!
     var zoomLevel: Float = 15.0
     
-    @IBOutlet var sourceLocationTextField: LocationTextField!
     // The currently selected place.
     var selectedPlace: GMSPlace?
     
@@ -57,8 +56,35 @@ class ViewController: UIViewController {
         view.addSubview(mapView)
         mapView.isHidden = true
         view.sendSubview(toBack: mapView);
-//        sourceLocationTextField.bringSubview(toFront: view);
         
+        hideKeyboards(ViewController: self);
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyBoardWillShow(notification:)), name: .UIKeyboardWillShow, object: nil);
+        NotificationCenter.default.addObserver(self, selector: #selector(keyBoardWillHide(notification:)), name: .UIKeyboardWillHide, object: nil);
+    }
+    
+    @objc func hideKeyboard() {
+        print("lmao wtf");
+        view.endEditing(true)
+    }
+    
+    @objc func keyBoardWillShow(notification: NSNotification) {
+        //handle appearing of keyboard here
+        let newview = UIView(frame: CGRect(x: self.view.bounds.origin.x, y: self.view.bounds.origin.y, width: self.view.bounds.width, height: self.view.bounds.height/3));
+        
+        newview.tag = 1;
+        newview.backgroundColor = UIColor.clear;
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        newview.addGestureRecognizer(tapGesture);
+        self.view.addSubview(newview);
+    }
+    
+    
+    @objc func keyBoardWillHide(notification: NSNotification) {
+        //handle dismiss of keyboard here
+        let newview = self.view.viewWithTag(1);
+        newview?.removeFromSuperview();
     }
     
     // Prepare the segue.
