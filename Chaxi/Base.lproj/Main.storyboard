@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Copperplate.ttc">
+            <string>Copperplate</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -20,32 +25,46 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QrL-E7-AlF">
                                 <rect key="frame" x="16" y="610" width="343" height="50"/>
-                                <color key="backgroundColor" red="1" green="0.40601772060000002" blue="0.40766339670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.12156862745098039" green="0.074509803921568626" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="sPJ-BN-XJ1"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="18"/>
+                                <state key="normal" title="Request Ride">
+                                    <color key="titleColor" red="0.96862745098039216" green="0.80784313725490198" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="requestRide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uwf-4H-0gJ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJw-nX-yQx">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJw-nX-yQx" customClass="LocationEntryButton" customModule="Chaxi" customModuleProvider="target">
                                 <rect key="frame" x="16" y="552" width="343" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.40601772060000002" blue="0.40766339670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="yxj-6R-NWv"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="18"/>
+                                <state key="normal" title="Set Drop Off Location"/>
+                                <connections>
+                                    <action selector="getDropOffLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jbX-fX-neV"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Of-Pa-ciQ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Of-Pa-ciQ" customClass="LocationEntryButton" customModule="Chaxi" customModuleProvider="target">
                                 <rect key="frame" x="16" y="494" width="343" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.40601772060000002" blue="0.40766339670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="rBt-QL-6Xp"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="18"/>
+                                <state key="normal" title="Set Pick Up Location"/>
+                                <connections>
+                                    <action selector="getPickUpLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gmu-yr-z68"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QrL-E7-AlF" secondAttribute="bottom" constant="7" id="Uih-TE-KBK" customClass="KeyboardLayoutConstraint" customModule="Chaxi" customModuleProvider="target"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QrL-E7-AlF" secondAttribute="bottom" constant="7" id="Uih-TE-KBK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sJw-nX-yQx" secondAttribute="trailing" constant="16" id="WID-Vm-5UG"/>
                             <constraint firstItem="QrL-E7-AlF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cQi-tt-1St"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Of-Pa-ciQ" secondAttribute="trailing" constant="16" id="iaR-VR-RlB"/>
@@ -57,6 +76,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="destinationLocation" destination="sJw-nX-yQx" id="9K5-IS-zXa"/>
+                        <outlet property="requestRideButton" destination="QrL-E7-AlF" id="WtN-QX-QJH"/>
+                        <outlet property="sourceLocation" destination="2Of-Pa-ciQ" id="ugi-eo-ZKq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

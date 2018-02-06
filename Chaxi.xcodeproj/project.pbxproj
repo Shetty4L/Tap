@@ -17,7 +17,8 @@
 		B5E3D6D220254C880036AEC7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B5E3D6D120254C880036AEC7 /* .gitignore */; };
 		B5E3D6D62026BEC80036AEC7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D6D52026BEC80036AEC7 /* Utils.swift */; };
 		B5E3D6D82026C0950036AEC7 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D6D72026C0950036AEC7 /* KeyboardLayoutConstraint.swift */; };
-		C5569406054DB2BAAA3561CB /* libPods-Chaxi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10DEBB5A2E920903559AF5B8 /* libPods-Chaxi.a */; };
+		B5E3D6DA2027FC860036AEC7 /* LocationEntryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D6D92027FC860036AEC7 /* LocationEntryButton.swift */; };
+		DCF907685A06359C07BA6679 /* Pods_Chaxi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFC1AF63FC290F155FA8670 /* Pods_Chaxi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		10DEBB5A2E920903559AF5B8 /* libPods-Chaxi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Chaxi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BFC1AF63FC290F155FA8670 /* Pods_Chaxi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chaxi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2FB9BA3CDA4B60E3EB81F85 /* Pods-Chaxi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chaxi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chaxi/Pods-Chaxi.debug.xcconfig"; sourceTree = "<group>"; };
 		B56802B62025128C005AAFA7 /* Chaxi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chaxi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56802B92025128D005AAFA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		B5E3D6D120254C880036AEC7 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
 		B5E3D6D52026BEC80036AEC7 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		B5E3D6D72026C0950036AEC7 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
+		B5E3D6D92027FC860036AEC7 /* LocationEntryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationEntryButton.swift; sourceTree = "<group>"; };
 		F5D8EE817D02B8FC8D597DD9 /* Pods-Chaxi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chaxi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chaxi/Pods-Chaxi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5569406054DB2BAAA3561CB /* libPods-Chaxi.a in Frameworks */,
+				DCF907685A06359C07BA6679 /* Pods_Chaxi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +74,7 @@
 		136F5955A4F5B7064F22284B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				10DEBB5A2E920903559AF5B8 /* libPods-Chaxi.a */,
+				6BFC1AF63FC290F155FA8670 /* Pods_Chaxi.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -144,6 +146,7 @@
 		B5E3D6CA20253D860036AEC7 /* UI Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B5E3D6D92027FC860036AEC7 /* LocationEntryButton.swift */,
 			);
 			path = "UI Classes";
 			sourceTree = "<group>";
@@ -258,9 +261,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Chaxi/Pods-Chaxi-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GooglePlacesPicker/GooglePlacesPicker.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GooglePlacesPicker.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -314,6 +322,7 @@
 			files = (
 				B56802BC2025128D005AAFA7 /* ViewController.swift in Sources */,
 				B56802BA2025128D005AAFA7 /* AppDelegate.swift in Sources */,
+				B5E3D6DA2027FC860036AEC7 /* LocationEntryButton.swift in Sources */,
 				B5E3D6D82026C0950036AEC7 /* KeyboardLayoutConstraint.swift in Sources */,
 				B5E3D6D62026BEC80036AEC7 /* Utils.swift in Sources */,
 			);
