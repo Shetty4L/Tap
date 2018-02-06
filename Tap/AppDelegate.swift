@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Chaxi
+//  Tap
 //
 //  Created by Suyash Shetty on 2/2/18.
 //  Copyright © 2018 Suyash Shetty. All rights reserved.

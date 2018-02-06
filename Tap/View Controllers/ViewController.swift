@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Chaxi
+//  Tap
 //
 //  Created by Suyash Shetty on 2/2/18.
 //  Copyright © 2018 Suyash Shetty. All rights reserved.
@@ -39,7 +39,7 @@ class ViewController: UIViewController, UITextFieldDelegate, GMSMapViewDelegate 
         // Initialize the location manager.
         locationManager = CLLocationManager()
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestAlwaysAuthorization()
+        locationManager.requestWhenInUseAuthorization()
         locationManager.distanceFilter = 50
         locationManager.startUpdatingLocation()
         locationManager.delegate = self
@@ -55,7 +55,8 @@ class ViewController: UIViewController, UITextFieldDelegate, GMSMapViewDelegate 
         mapView.isMyLocationEnabled = false
         mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
-        marker.position = CLLocationCoordinate2D(latitude: (locationManager.location?.coordinate.latitude)!, longitude: (locationManager.location?.coordinate.longitude)!)
+        
+        marker.position = CLLocationCoordinate2D(latitude: defaultLocation.coordinate.latitude, longitude: defaultLocation.coordinate.longitude)
         marker.title = "Your Location"
         marker.isDraggable = true
         marker.map = mapView
@@ -68,8 +69,6 @@ class ViewController: UIViewController, UITextFieldDelegate, GMSMapViewDelegate 
         destinationLocation.isHidden = true;
         requestRideButton.isHidden = true;
         requestRideButton.layer.cornerRadius = 10.0
-        
-        getCurrentPlace(coordinate: marker.position);
         
         mapView.delegate = self;
     }
@@ -117,12 +116,10 @@ class ViewController: UIViewController, UITextFieldDelegate, GMSMapViewDelegate 
     @IBAction func requestRide(_ sender: Any) {
         var start: [String:Double] = ["lat":0.0,"long":0.0] {
             didSet {
-                print("Start: \(start["lat"]), \(start["long"])");
             }
         }
         var end: [String:Double] = ["lat":0.0,"long":0.0] {
-            didSet {
-                print("End: \(end["lat"]), \(end["long"])");
+            didSet {                
             }
         }
         
@@ -168,6 +165,9 @@ extension ViewController: CLLocationManagerDelegate {
         } else {
             mapView.animate(to: camera)
         }
+        self.marker.position.latitude = location.coordinate.latitude
+        self.marker.position.longitude = location.coordinate.longitude
+        getCurrentPlace(coordinate: location.coordinate)
     }
     
     // Handle authorization for the location manager.

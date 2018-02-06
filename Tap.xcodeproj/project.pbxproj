@@ -12,13 +12,13 @@
 		B56802BF2025128D005AAFA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56802BD2025128D005AAFA7 /* Main.storyboard */; };
 		B56802C12025128D005AAFA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B56802C02025128D005AAFA7 /* Assets.xcassets */; };
 		B56802C42025128D005AAFA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56802C22025128D005AAFA7 /* LaunchScreen.storyboard */; };
-		B56802CF2025128D005AAFA7 /* ChaxiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56802CE2025128D005AAFA7 /* ChaxiTests.swift */; };
+		B56802CF2025128D005AAFA7 /* TapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56802CE2025128D005AAFA7 /* TapTests.swift */; };
 		B56802DA2025138A005AAFA7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B56802D92025138A005AAFA7 /* Podfile */; };
 		B5E3D6D220254C880036AEC7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B5E3D6D120254C880036AEC7 /* .gitignore */; };
 		B5E3D6D62026BEC80036AEC7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D6D52026BEC80036AEC7 /* Utils.swift */; };
 		B5E3D6D82026C0950036AEC7 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D6D72026C0950036AEC7 /* KeyboardLayoutConstraint.swift */; };
 		B5E3D6DA2027FC860036AEC7 /* LocationEntryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D6D92027FC860036AEC7 /* LocationEntryButton.swift */; };
-		DCF907685A06359C07BA6679 /* Pods_Chaxi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFC1AF63FC290F155FA8670 /* Pods_Chaxi.framework */; };
+		DCF907685A06359C07BA6679 /* Pods_Tap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFC1AF63FC290F155FA8670 /* Pods_Tap.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,24 +32,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6BFC1AF63FC290F155FA8670 /* Pods_Chaxi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chaxi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2FB9BA3CDA4B60E3EB81F85 /* Pods-Chaxi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chaxi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chaxi/Pods-Chaxi.debug.xcconfig"; sourceTree = "<group>"; };
-		B56802B62025128C005AAFA7 /* Chaxi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chaxi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3379B6B932F25B8A61E21017 /* Pods-Tap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tap/Pods-Tap.debug.xcconfig"; sourceTree = "<group>"; };
+		53011BA731CDD6CE7FA1DFFB /* Pods-Tap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tap/Pods-Tap.release.xcconfig"; sourceTree = "<group>"; };
+		6BFC1AF63FC290F155FA8670 /* Pods_Tap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B56802B62025128C005AAFA7 /* Tap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56802B92025128D005AAFA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B56802BB2025128D005AAFA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B56802BE2025128D005AAFA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B56802C02025128D005AAFA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B56802C32025128D005AAFA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B56802C52025128D005AAFA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B56802CA2025128D005AAFA7 /* ChaxiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChaxiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B56802CE2025128D005AAFA7 /* ChaxiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaxiTests.swift; sourceTree = "<group>"; };
+		B56802CA2025128D005AAFA7 /* TapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B56802CE2025128D005AAFA7 /* TapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapTests.swift; sourceTree = "<group>"; };
 		B56802D02025128D005AAFA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B56802D92025138A005AAFA7 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B5A7907520294C6300823C16 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E3D6D120254C880036AEC7 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
 		B5E3D6D52026BEC80036AEC7 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		B5E3D6D72026C0950036AEC7 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
 		B5E3D6D92027FC860036AEC7 /* LocationEntryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationEntryButton.swift; sourceTree = "<group>"; };
-		F5D8EE817D02B8FC8D597DD9 /* Pods-Chaxi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chaxi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chaxi/Pods-Chaxi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCF907685A06359C07BA6679 /* Pods_Chaxi.framework in Frameworks */,
+				DCF907685A06359C07BA6679 /* Pods_Tap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +75,8 @@
 		136F5955A4F5B7064F22284B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6BFC1AF63FC290F155FA8670 /* Pods_Chaxi.framework */,
+				B5A7907520294C6300823C16 /* Alamofire.framework */,
+				6BFC1AF63FC290F155FA8670 /* Pods_Tap.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -82,8 +84,8 @@
 		797B29F75C1D2EE7DF7F78DD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A2FB9BA3CDA4B60E3EB81F85 /* Pods-Chaxi.debug.xcconfig */,
-				F5D8EE817D02B8FC8D597DD9 /* Pods-Chaxi.release.xcconfig */,
+				3379B6B932F25B8A61E21017 /* Pods-Tap.debug.xcconfig */,
+				53011BA731CDD6CE7FA1DFFB /* Pods-Tap.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -91,8 +93,8 @@
 		B56802AD2025128C005AAFA7 = {
 			isa = PBXGroup;
 			children = (
-				B56802B82025128C005AAFA7 /* Chaxi */,
-				B56802CD2025128D005AAFA7 /* ChaxiTests */,
+				B56802B82025128C005AAFA7 /* Tap */,
+				B56802CD2025128D005AAFA7 /* TapTests */,
 				B56802B72025128C005AAFA7 /* Products */,
 				797B29F75C1D2EE7DF7F78DD /* Pods */,
 				136F5955A4F5B7064F22284B /* Frameworks */,
@@ -102,13 +104,13 @@
 		B56802B72025128C005AAFA7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B56802B62025128C005AAFA7 /* Chaxi.app */,
-				B56802CA2025128D005AAFA7 /* ChaxiTests.xctest */,
+				B56802B62025128C005AAFA7 /* Tap.app */,
+				B56802CA2025128D005AAFA7 /* TapTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B56802B82025128C005AAFA7 /* Chaxi */ = {
+		B56802B82025128C005AAFA7 /* Tap */ = {
 			isa = PBXGroup;
 			children = (
 				B5E3D6D72026C0950036AEC7 /* KeyboardLayoutConstraint.swift */,
@@ -123,16 +125,16 @@
 				B5E3D6D120254C880036AEC7 /* .gitignore */,
 				B5E3D6D52026BEC80036AEC7 /* Utils.swift */,
 			);
-			path = Chaxi;
+			path = Tap;
 			sourceTree = "<group>";
 		};
-		B56802CD2025128D005AAFA7 /* ChaxiTests */ = {
+		B56802CD2025128D005AAFA7 /* TapTests */ = {
 			isa = PBXGroup;
 			children = (
-				B56802CE2025128D005AAFA7 /* ChaxiTests.swift */,
+				B56802CE2025128D005AAFA7 /* TapTests.swift */,
 				B56802D02025128D005AAFA7 /* Info.plist */,
 			);
-			path = ChaxiTests;
+			path = TapTests;
 			sourceTree = "<group>";
 		};
 		B5E3D6C920253D7A0036AEC7 /* View Controllers */ = {
@@ -154,9 +156,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B56802B52025128C005AAFA7 /* Chaxi */ = {
+		B56802B52025128C005AAFA7 /* Tap */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B56802D32025128D005AAFA7 /* Build configuration list for PBXNativeTarget "Chaxi" */;
+			buildConfigurationList = B56802D32025128D005AAFA7 /* Build configuration list for PBXNativeTarget "Tap" */;
 			buildPhases = (
 				10B6BFA518427B5870AC9596 /* [CP] Check Pods Manifest.lock */,
 				B56802B22025128C005AAFA7 /* Sources */,
@@ -169,14 +171,14 @@
 			);
 			dependencies = (
 			);
-			name = Chaxi;
+			name = Tap;
 			productName = Chaxi;
-			productReference = B56802B62025128C005AAFA7 /* Chaxi.app */;
+			productReference = B56802B62025128C005AAFA7 /* Tap.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B56802C92025128D005AAFA7 /* ChaxiTests */ = {
+		B56802C92025128D005AAFA7 /* TapTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B56802D62025128D005AAFA7 /* Build configuration list for PBXNativeTarget "ChaxiTests" */;
+			buildConfigurationList = B56802D62025128D005AAFA7 /* Build configuration list for PBXNativeTarget "TapTests" */;
 			buildPhases = (
 				B56802C62025128D005AAFA7 /* Sources */,
 				B56802C72025128D005AAFA7 /* Frameworks */,
@@ -187,9 +189,9 @@
 			dependencies = (
 				B56802CC2025128D005AAFA7 /* PBXTargetDependency */,
 			);
-			name = ChaxiTests;
+			name = TapTests;
 			productName = ChaxiTests;
-			productReference = B56802CA2025128D005AAFA7 /* ChaxiTests.xctest */;
+			productReference = B56802CA2025128D005AAFA7 /* TapTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -213,7 +215,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B56802B12025128C005AAFA7 /* Build configuration list for PBXProject "Chaxi" */;
+			buildConfigurationList = B56802B12025128C005AAFA7 /* Build configuration list for PBXProject "Tap" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -226,8 +228,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B56802B52025128C005AAFA7 /* Chaxi */,
-				B56802C92025128D005AAFA7 /* ChaxiTests */,
+				B56802B52025128C005AAFA7 /* Tap */,
+				B56802C92025128D005AAFA7 /* TapTests */,
 			);
 		};
 /* End PBXProject section */
@@ -261,7 +263,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Chaxi/Pods-Chaxi-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Tap/Pods-Tap-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GooglePlacesPicker/GooglePlacesPicker.framework",
 			);
@@ -272,7 +274,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chaxi/Pods-Chaxi-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tap/Pods-Tap-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		10B6BFA518427B5870AC9596 /* [CP] Check Pods Manifest.lock */ = {
@@ -286,7 +288,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Chaxi-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Tap-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -299,7 +301,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Chaxi/Pods-Chaxi-resources.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Tap/Pods-Tap-resources.sh",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
@@ -310,7 +312,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chaxi/Pods-Chaxi-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tap/Pods-Tap-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -332,7 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B56802CF2025128D005AAFA7 /* ChaxiTests.swift in Sources */,
+				B56802CF2025128D005AAFA7 /* TapTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +343,7 @@
 /* Begin PBXTargetDependency section */
 		B56802CC2025128D005AAFA7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B56802B52025128C005AAFA7 /* Chaxi */;
+			target = B56802B52025128C005AAFA7 /* Tap */;
 			targetProxy = B56802CB2025128D005AAFA7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -475,14 +477,14 @@
 		};
 		B56802D42025128D005AAFA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2FB9BA3CDA4B60E3EB81F85 /* Pods-Chaxi.debug.xcconfig */;
+			baseConfigurationReference = 3379B6B932F25B8A61E21017 /* Pods-Tap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R7P6BHLT6K;
-				INFOPLIST_FILE = Chaxi/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Tap/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Chaxi;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Tap-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -491,14 +493,14 @@
 		};
 		B56802D52025128D005AAFA7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5D8EE817D02B8FC8D597DD9 /* Pods-Chaxi.release.xcconfig */;
+			baseConfigurationReference = 53011BA731CDD6CE7FA1DFFB /* Pods-Tap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R7P6BHLT6K;
-				INFOPLIST_FILE = Chaxi/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Tap/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Chaxi;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Tap-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -518,7 +520,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chaxi.app/Chaxi";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tap.app/Tap";
 			};
 			name = Debug;
 		};
@@ -535,14 +537,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chaxi.app/Chaxi";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tap.app/Tap";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B56802B12025128C005AAFA7 /* Build configuration list for PBXProject "Chaxi" */ = {
+		B56802B12025128C005AAFA7 /* Build configuration list for PBXProject "Tap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B56802D12025128D005AAFA7 /* Debug */,
@@ -551,7 +553,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B56802D32025128D005AAFA7 /* Build configuration list for PBXNativeTarget "Chaxi" */ = {
+		B56802D32025128D005AAFA7 /* Build configuration list for PBXNativeTarget "Tap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B56802D42025128D005AAFA7 /* Debug */,
@@ -560,7 +562,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B56802D62025128D005AAFA7 /* Build configuration list for PBXNativeTarget "ChaxiTests" */ = {
+		B56802D62025128D005AAFA7 /* Build configuration list for PBXNativeTarget "TapTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B56802D72025128D005AAFA7 /* Debug */,
